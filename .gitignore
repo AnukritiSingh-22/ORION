@@ -1,0 +1,22 @@
+# Environment variables
+.env
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+venv/
+
+# Node / Frontend
+node_modules/
+
+# ML artifacts
+ml/models/
+ml/datasets/
+
+# OS files
+.DS_Store
+
+# Logs
+*.log
