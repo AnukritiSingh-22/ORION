@@ -1,0 +1,135 @@
+.home-container {
+  min-height: 100vh;
+  width: 100vw;
+  background: radial-gradient(circle at top, #141420, #0b0b0f);
+  color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+/* HEADER */
+.home-header {
+  height: 72px;
+  padding: 0 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  background: rgba(20, 20, 32, 0.75);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.home-header h3 {
+  font-size: 14px;
+  letter-spacing: 1px;
+  color: #cfcfcf;
+}
+
+.header-actions button {
+  margin-left: 20px;
+  padding: 6px 14px;
+  border-radius: 20px;
+  background: transparent;
+  color: #00f5d4;
+  border: 1px solid rgba(0, 245, 212, 0.4);
+  cursor: pointer;
+  font-size: 14px;
+  transition: all 0.3s ease;
+}
+
+.header-actions button:hover {
+  background: #00f5d4;
+  color: black;
+}
+
+/* MAIN */
+.home-main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ARC TEXT */
+/* .arc-text {
+  position: relative;
+  width: 520px;
+  height: 180px;
+  margin-bottom: 40px;
+}
+
+.arc-text span {
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform-origin: 0 140px;
+  font-size: 36px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  color: white;
+} */
+
+/* HERO CARD */
+.hero-box {
+  width: 480px;
+  height: 260px;
+  border-radius: 20px;
+  background: linear-gradient(135deg, #00f5d4, #7b61ff);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 40px rgba(0, 245, 212, 0.25);
+  animation: float 6s ease-in-out infinite;
+}
+
+.hero-box img {
+  width: 85%;
+  height: auto;
+  border-radius: 14px;
+}
+
+/* CTA */
+.cta-btn {
+  margin-top: 20px;
+  padding: 14px 36px;
+  font-size: 18px;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  background: linear-gradient(135deg, #00f5d4, #7b61ff);
+  color: black;
+  transition: transform 0.3s ease;
+}
+
+.cta-btn:hover {
+  transform: scale(1.05);
+}
+
+/* ANIMATIONS */
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-12px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+.home-main {
+  animation: fadeIn 1.2s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
