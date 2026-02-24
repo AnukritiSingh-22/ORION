@@ -1,6 +1,6 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Login from "./components/Login";
+import Login from "./components/Auth";
 import Dashboard from "./components/Dashboard";
 import InterviewRoom from "./components/InterviewRoom";
 import Feedback from "./components/Feedback";
